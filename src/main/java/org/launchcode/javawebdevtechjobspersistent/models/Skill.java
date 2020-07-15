@@ -1,11 +1,16 @@
 package org.launchcode.javawebdevtechjobspersistent.models;
 
 import javax.persistence.Entity;
+import javax.validation.constraints.Size;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Skill extends AbstractEntity {
 
     private String description;
+
+    private List<Job> jobList = new ArrayList<>();
 
     public Skill(){};
 

@@ -4,11 +4,13 @@ import javax.persistence.Entity;
 import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.List;
+import javax.persistence.ManyToMany;
 
 @Entity
 public class Skill extends AbstractEntity {
 
     private String description;
+    @ManyToMany
 
     private List<Job> jobs = new ArrayList<>();
 

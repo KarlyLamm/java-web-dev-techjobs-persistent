@@ -5,6 +5,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.List;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Employer extends AbstractEntity {
@@ -12,6 +13,7 @@ public class Employer extends AbstractEntity {
     @NotNull
     @Size(min= 3, max = 30, message="Location must be between 3 and 30 characters")
     private String location;
+    @OneToMany
     private List<Job> jobs = new ArrayList<>();
 
     public Employer() {}

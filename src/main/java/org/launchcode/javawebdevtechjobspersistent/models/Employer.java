@@ -14,7 +14,7 @@ public class Employer extends AbstractEntity {
     @Size(min= 3, max = 30, message="Location must be between 3 and 30 characters")
     private String location;
     @OneToMany
-    private List<Job> jobs = new ArrayList<>();
+   // private List<Job> jobs = new ArrayList<>();
 
     public Employer() {}
 
@@ -38,4 +38,3 @@ public class Employer extends AbstractEntity {
 //    public void setJobs(List<Job> jobs) {
 //        this.jobs = jobs;
 //    }
-}

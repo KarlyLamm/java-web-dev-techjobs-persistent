@@ -13,7 +13,7 @@ public class Employer extends AbstractEntity {
     @NotNull
     @Size(min= 3, max = 30, message="Location must be between 3 and 30 characters")
     private String location;
-    @OneToMany(mappedBy = "employer")
+//    @OneToMany(mappedBy = "employer")
    // private List<Job> jobs = new ArrayList<>();
 
     public Employer() {}
